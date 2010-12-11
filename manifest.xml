@@ -19,7 +19,7 @@
 	<description>Switches style to mobile version for mobile devices.</description>
 	<author>Loa</author>
 	<minversion>1.3</minversion>
-	<maxtestedon>1.3.2</maxtestedon>
+	<maxtestedon>1.3.4</maxtestedon>
 
 	<hooks>
 		<hook id="co_modify_url_scheme"><![CDATA[
