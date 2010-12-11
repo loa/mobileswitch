@@ -1,0 +1,24 @@
+        =====================
+         MobileSwitch Readme
+        =====================
+
+         Requirements
+        --------------
+ - Running PunBB installation http://punbb.informer.com/
+ - Mobiletheme (https://github.com/Loa/OxygenMobile)
+
+         Usage
+        -------
+Will switch to mobile style for mobile devices if current used style exists in $STYLENAME$Mobile version. For example OxygenMobile can be used with Oxygen.
+
+         Recommendations
+        -----------------
+I will soon release a PunBB extensions that allow a user to specify a specific style for their mobile devices.
+
+         Detect Mobile Browsers
+        ------------------------
+This extension uses a php function from http://detectmobilebrowsers.mobi/
+
+Terms and Conditions for Detect Mobile Browsers:
+Free for non-commercial, charitable and educational use otherwise an upgrade is required. An upgrade costs $50.00 per year by PayPal subscription, by upgrading you are showing you have installed the function and it is working to your expectations.
+

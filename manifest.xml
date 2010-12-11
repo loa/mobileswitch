@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE extension SYSTEM "ext-1.0.dtd">
+
+<!--
+/**
+ * MobileSwitch extension for PunBB forum
+ * Switches to a mobile style incase it exists one
+ * for current used for mobile device.
+ *
+ * @author Loa - https://github.com/Loa/
+ * @package mobileswitch
+ */
+-->
+
+<extension engine="1.0">
+	<id>mobileswitch</id>
+	<title>MobileSwitch</title>
+	<version>0.0.1</version>
+	<description>Switches style to mobile version for mobile devices.</description>
+	<author>Loa</author>
+	<minversion>1.3</minversion>
+	<maxtestedon>1.3.2</maxtestedon>
+
+	<hooks>
+		<hook id="co_modify_url_scheme"><![CDATA[
+require_once($ext_info['path'].'/mobile_device_detect.php');
+$mob = mobile_device_detect(true,false,true);
+
+if($mob[0]) {
+    if(file_exists(
+        FORUM_ROOT.'style/'.
+        $forum_user['style'].'Mobile/'.
+        $forum_user['style'].'Mobile.php'
+    ))
+    {
+        $forum_user['style'] = $forum_user['style'].'Mobile';
+    }
+}
+		]]></hook>
+	</hooks>
+
+</extension>
