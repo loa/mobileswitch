@@ -9,7 +9,7 @@
 
          Usage
         -------
-Will switch to mobile style for mobile devices if current used style exists in $STYLENAME$Mobile version. For example OxygenMobile can be used with Oxygen.
+Will switch to mobile style for mobile devices if currently used style exists in $STYLENAME$Mobile version. For example OxygenMobile will be used instead of Oxygen on a mobile device. If current style doesn't have a mobile version then mobileswitch will use OxygenMobile if it exists.
 
          Recommendations
         -----------------
